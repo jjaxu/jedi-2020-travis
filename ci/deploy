@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+echo "===== Deployment Script runs! Status: ($1) ====="

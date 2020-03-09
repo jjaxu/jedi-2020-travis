@@ -1,0 +1,10 @@
+language: java
+before_install:
+install:
+  - mvn clean install -Dgpg.skip=true
+before_script:
+script:
+after_success:
+  - "./ci/deploy success"
+after_failure:
+  - "./ci/deploy fail"
