@@ -5,6 +5,5 @@ install:
 before_script:
 script:
 after_success:
-  - "./ci/deploy success"
+  - "./ci/deploy"
 after_failure:
-  - "./ci/deploy fail"
