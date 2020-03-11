@@ -22,6 +22,7 @@ public class App
         }
 
         // Pretend we added a feature but forgot to change the version number
+        System.out.println("Goodbye!");
     }
 }
 
