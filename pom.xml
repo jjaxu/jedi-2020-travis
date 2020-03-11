@@ -6,7 +6,7 @@
 
   <groupId>org.example</groupId>
   <artifactId>jedi-2020-travis</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.3</version>
   <name>jedi-2020-travis</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>

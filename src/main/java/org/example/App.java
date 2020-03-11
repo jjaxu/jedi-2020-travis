@@ -11,11 +11,14 @@ public class App
      *
      * @param args Not used
      */
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+    public static void main(final String[] args) {
+        System.out.println("Hello World!");
         if (args.length > 0) {
             System.out.println("More arguments!");
+            int i = 0;
+            for (final String arg : args) {
+                System.out.println(i + ": " + arg);
+            }
         }
     }
 }
