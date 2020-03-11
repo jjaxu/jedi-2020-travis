@@ -3,6 +3,10 @@
 if [ "${TRAVIS_BRANCH}" == 'master' ] && [ "${TRAVIS_PULL_REQUEST}" == 'false' ]; then
   echo "===== Starting Deployment... ====="
   mvn deploy --settings ci/deploy_settings.xml
+  if [ "${?}" != 0 ]; then
+      echo
+      echo "==== Deployment Failed, likely due to an outdated version number ===="
+  fi
 else
-  echo "===== No deployment is done ====="
+  echo "===== No deployment is done because changes are not made to master branch ====="
 fi
