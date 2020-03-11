@@ -20,6 +20,8 @@ public class App
                 System.out.println(i + ": " + arg);
             }
         }
+
+        // Pretend we added a feature but forgot to change the version number
     }
 }
 
