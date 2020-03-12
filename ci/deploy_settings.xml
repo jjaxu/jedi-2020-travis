@@ -7,5 +7,9 @@
             <username>${env.BINTRAY_USER}</username>
             <password>${env.BINTRAY_KEY}</password>
         </server>
+        <server>
+            <id>gpg.passphrase</id>
+            <passphrase>${env.GPG_PASS}</passphrase>
+        </server>
     </servers>
 </settings>
