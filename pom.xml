@@ -6,7 +6,7 @@
 
   <groupId>org.example</groupId>
   <artifactId>jedi-2020-travis</artifactId>
-  <version>1.0.3</version>
+  <version>1.0.4</version>
   <name>jedi-2020-travis</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
@@ -76,6 +76,22 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
+
+        <!-- Maven GPG signing plugin-->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-gpg-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>sign-artifacts</id>
+              <phase>verify</phase>
+              <goals>
+                <goal>sign</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+
       </plugins>
     </pluginManagement>
   </build>
